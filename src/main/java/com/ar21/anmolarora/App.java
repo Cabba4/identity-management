@@ -9,5 +9,7 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
+        IDMService idm = new IDMService();
+        idm.createIdentity();
     }
 }
