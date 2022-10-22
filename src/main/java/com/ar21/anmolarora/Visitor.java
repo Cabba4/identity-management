@@ -40,4 +40,8 @@ public class Visitor implements Identity{
     public void displayName() {
         System.out.println("Name is " + this.firstName + this.lastName);
     }
+
+    public void addDetails(){
+        
+    }
 }

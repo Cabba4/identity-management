@@ -27,10 +27,17 @@ public class Student implements Identity {
         this.email = email;
     }
 
+    
     public Student() {
         this.firstName = "John";
         this.lastName = "Doe";
-        this.email = "john.doe@hackmail.com";
+        this.email = "john.doe@hackermail.com";
+    }
+
+    public Student(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
     }
 
     public void displayEmail() {
@@ -39,5 +46,11 @@ public class Student implements Identity {
 
     public void displayName() {
         System.out.println("Name is " + this.firstName + this.lastName);
+    }
+
+    public void addDetails(){
+        this.firstName = "newStudent";
+        this.lastName = "lastName";
+        this.email = "news.last@hackermail.com";
     }
 }

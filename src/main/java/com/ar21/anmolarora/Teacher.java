@@ -40,4 +40,10 @@ public class Teacher implements Identity {
     public void displayName() {
         System.out.println("Name is " + this.firstName + this.lastName);
     }
+
+    public void addDetails(){
+        this.firstName = "newTeacher";
+        this.lastName = "lastName";
+        this.email = "teacher.last@hackermail.com";
+    }
 }

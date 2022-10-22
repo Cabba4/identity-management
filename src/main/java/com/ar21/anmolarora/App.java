@@ -10,6 +10,12 @@ public class App
     {
         System.out.println( "Hello World!" );
         IDMService idm = new IDMService();
-        idm.createIdentity();
+        idm.createIdentity(new Student("Ethan","Blake","ethan.blake@hackermail.com"));
+        Student newStudent = new Student();
+        idm.getIdentity(newStudent);
+        Teacher newTeacher = new Teacher();
+        idm.getIdentity(newTeacher);
+        newTeacher.addDetails();
+        newTeacher.displayName();
     }
 }
