@@ -10,7 +10,8 @@ public class App
     {
         System.out.println( "Hello World!" );
         //IDMfunction();
-        ContactService();
+        //ContactService();
+        adapterService();
     }
 
     public static void IDMfunction(){
@@ -20,8 +21,7 @@ public class App
         idm.getIdentity(newStudent);
         Teacher newTeacher = new Teacher();
         idm.getIdentity(newTeacher);
-        newTeacher.addDetails();
-        newTeacher.displayName();
+        //newTeacher.displayName();
     }
 
     public static void ContactService(){
@@ -29,5 +29,13 @@ public class App
         CustomerContact another = new CustomerContact("user1", "user@mail.com", 1121);
         contactService.addContact(another);
         contactService.findContact(another);
+    }
+
+    public static void adapterService(){
+        Contact contact = new CustomerContact("Goku","goku@mail.com",1111);
+        //Contact contact = new CustomerContact();
+        Identity contactAdapter = new ContactAdapter(contact);
+        System.out.println(contactAdapter.displayName());
+        System.out.println(contactAdapter.displayEmail());
     }
 }

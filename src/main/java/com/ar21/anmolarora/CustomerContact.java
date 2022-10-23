@@ -14,6 +14,10 @@ public class CustomerContact implements Contact {
         this.userID = userID;
     }
 
+    public CustomerContact(){
+        
+    }
+
     @Override
     public String getDisplayName() {
         return displayName;

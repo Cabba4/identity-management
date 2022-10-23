@@ -2,13 +2,15 @@ package com.ar21.anmolarora;
 
 public class IDMService {
 
+    Student newStudent = new Student();
     public void createIdentity(Identity idm) {
-        idm.addDetails();
+        newStudent.setFirstName(idm.displayName());
+        newStudent.setEmail(idm.displayEmail());
     }
 
     public void getIdentity(Identity idm) {
-        idm.displayEmail();
-        idm.displayName();
+        System.out.println("Email is " + idm.displayEmail());
+        System.out.println("Name is " + idm.displayName());
     }
 
     public void modifyIdentity(){

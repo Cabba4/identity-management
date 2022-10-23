@@ -33,17 +33,11 @@ public class Teacher implements Identity {
         this.email = "walter.white@hackmail.com";
     }
 
-    public void displayEmail() {
-        System.out.println("Email is is " + this.email);
+    public String displayEmail() {
+        return this.email;
     }
 
-    public void displayName() {
-        System.out.println("Name is " + this.firstName + this.lastName);
-    }
-
-    public void addDetails(){
-        this.firstName = "newTeacher";
-        this.lastName = "lastName";
-        this.email = "teacher.last@hackermail.com";
+    public String displayName() {
+       return this.firstName;
     }
 }

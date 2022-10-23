@@ -40,17 +40,12 @@ public class Student implements Identity {
         this.email = email;
     }
 
-    public void displayEmail() {
-        System.out.println("Email is is " + this.email);
+    public String displayEmail() {
+        return this.email;
     }
 
-    public void displayName() {
-        System.out.println("Name is " + this.firstName + this.lastName);
+    public String displayName() {
+       return this.firstName;
     }
 
-    public void addDetails(){
-        this.firstName = "newStudent";
-        this.lastName = "lastName";
-        this.email = "news.last@hackermail.com";
-    }
 }
